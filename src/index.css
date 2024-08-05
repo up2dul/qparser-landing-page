@@ -10,6 +10,7 @@
     font-display: swap;
     src: url(/fonts/Caveat-Bold.woff2) format('woff2');
   }
+
   @font-face {
     font-family: 'ClashDisplay';
     font-style: normal;
@@ -17,6 +18,7 @@
     font-display: swap;
     src: url(/fonts/ClashDisplay-Regular.woff2) format('woff2');
   }
+
   @font-face {
     font-family: 'ClashDisplay';
     font-style: normal;
@@ -24,6 +26,7 @@
     font-display: swap;
     src: url(/fonts/ClashDisplay-Medium.woff2) format('woff2');
   }
+
   @font-face {
     font-family: 'ClashDisplay';
     font-style: normal;
@@ -31,11 +34,16 @@
     font-display: swap;
     src: url(/fonts/ClashDisplay-SemiBold.woff2) format('woff2');
   }
+
   @font-face {
     font-family: 'ClashDisplay';
     font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(/fonts/ClashDisplay-Bold.woff2) format('woff2');
+  }
+
+  html {
+    @apply font-clash text-lg;
   }
 }
