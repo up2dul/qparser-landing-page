@@ -1,5 +1,11 @@
+import { Header } from './components/layout';
+
 function App() {
-  return <h1 className="text-3xl">QParser</h1>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
