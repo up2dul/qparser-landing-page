@@ -48,6 +48,6 @@
   }
 
   section {
-    @apply py-25 text-center text-balance leading-none;
+    @apply py-25 text-center leading-none;
   }
 }

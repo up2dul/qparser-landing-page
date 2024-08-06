@@ -1,5 +1,12 @@
 import { Footer, Header } from './components/layout';
-import { Detail, Hero, Install, JoinUs, Payments } from './components/section';
+import {
+  Detail,
+  Hero,
+  Install,
+  JoinUs,
+  Payments,
+  Pricing,
+} from './components/section';
 
 function App() {
   return (
@@ -11,6 +18,7 @@ function App() {
         <Install />
         <Detail />
         <Payments />
+        <Pricing />
         <JoinUs />
       </main>
 

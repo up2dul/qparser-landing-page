@@ -66,6 +66,7 @@ export const pricings = [
       'Unlimited queries',
       'Access all feature inside',
     ],
+    isHighlighted: false,
   },
   {
     title: '1 Month',
@@ -78,6 +79,7 @@ export const pricings = [
       'Access all feature inside',
       'Access full customers support',
     ],
+    isHighlighted: true,
   },
   {
     title: '3 Month',
@@ -91,5 +93,6 @@ export const pricings = [
       'Access full customers support',
       'More cheapest than 1 month',
     ],
+    isHighlighted: false,
   },
 ];
