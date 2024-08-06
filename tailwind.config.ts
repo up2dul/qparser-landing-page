@@ -7,11 +7,12 @@ export default {
       transparent: 'transparent',
       white: '#FFF',
       green: '#A8FF35',
-      'dark-50': '#585858',
-      'dark-100': '#323232',
-      'dark-200': '#2E2E2E',
-      'dark-300': '#181818',
-      'dark-400': '#050505',
+      'dark-50': '#7B7B7B',
+      'dark-100': '#585858',
+      'dark-200': '#323232',
+      'dark-300': '#2E2E2E',
+      'dark-400': '#181818',
+      'dark-500': '#050505',
     },
     extend: {
       fontFamily: {
@@ -20,6 +21,9 @@ export default {
       },
       screens: {
         xs: '480px',
+      },
+      spacing: {
+        '25': '6.25rem',
       },
     },
   },
