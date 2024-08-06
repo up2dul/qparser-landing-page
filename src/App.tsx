@@ -1,5 +1,5 @@
-import { Header } from './components/layout';
-import { Detail, Hero, Install, Payments } from './components/section';
+import { Footer, Header } from './components/layout';
+import { Detail, Hero, Install, JoinUs, Payments } from './components/section';
 
 function App() {
   return (
@@ -11,7 +11,10 @@ function App() {
         <Install />
         <Detail />
         <Payments />
+        <JoinUs />
       </main>
+
+      <Footer />
     </>
   );
 }
