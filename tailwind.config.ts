@@ -7,6 +7,7 @@ export default {
       transparent: 'transparent',
       white: '#FFF',
       green: '#A8FF35',
+      grey: '#D9D9D9',
       'dark-50': '#7B7B7B',
       'dark-100': '#585858',
       'dark-200': '#323232',
