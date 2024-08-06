@@ -1,11 +1,18 @@
+import type { ButtonHTMLAttributes, PropsWithChildren } from 'react';
+
 import { cn } from '~/lib/utils';
 
-type ButtonProps = {
-  variant?: 'dark' | 'light' | 'green';
-  children: React.ReactNode;
-};
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
+  PropsWithChildren<{
+    variant?: 'dark' | 'light' | 'green';
+  }>;
 
-export const Button = ({ variant = 'dark', children }: ButtonProps) => {
+export const Button = ({
+  className,
+  variant = 'dark',
+  children,
+  ...rest
+}: ButtonProps) => {
   return (
     <button
       type="button"
@@ -14,9 +21,11 @@ export const Button = ({ variant = 'dark', children }: ButtonProps) => {
         'rounded-full py-[14px] px-[38px] font-medium',
         variant === 'dark' && 'bg-dark-400 text-white',
         variant === 'light' && 'bg-white text-dark-400',
-        variant === 'green' && 'bg-green-500 text-white',
+        variant === 'green' && 'bg-green text-dark-400',
         'transition hover:opacity-90',
+        className,
       )}
+      {...rest}
     >
       {children}
     </button>

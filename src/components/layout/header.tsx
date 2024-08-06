@@ -1,9 +1,16 @@
 import { Navbar } from '~/components/common';
 import { Button, Link, NavLogo } from '~/components/ui';
+import { cn } from '~/lib/utils';
 
 export const Header = () => {
   return (
-    <header className="py-5 px-[70px] bg-dark-400 text-white flex justify-between items-center">
+    <header
+      className={cn(
+        'py-5 px-[70px] bg-dark-500 text-white',
+        'flex justify-between items-center',
+        'fixed top-0 inset-x-0 z-10',
+      )}
+    >
       <NavLogo isResponsive />
 
       <Navbar />
