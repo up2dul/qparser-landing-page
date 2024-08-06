@@ -28,6 +28,33 @@ export const advantages = [
   'Access full customers support',
 ];
 
+export const payments = [
+  {
+    name: 'Bitcoin',
+    src: '/images/bitcoin.webp',
+  },
+  {
+    name: 'Binance',
+    src: '/images/binance.webp',
+  },
+  {
+    name: 'Ethereum',
+    src: '/images/ethereum.webp',
+  },
+  {
+    name: 'Litecoin',
+    src: '/images/litecoin.webp',
+  },
+  {
+    name: 'Tether',
+    src: '/images/tether.webp',
+  },
+  {
+    name: 'USD',
+    src: '/images/usd.webp',
+  },
+];
+
 export const pricings = [
   {
     title: 'Weekly',
