@@ -46,4 +46,8 @@
   html {
     @apply font-clash text-lg;
   }
+
+  section {
+    @apply py-25 text-center text-balance leading-none;
+  }
 }
