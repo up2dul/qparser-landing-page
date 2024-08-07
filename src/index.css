@@ -53,3 +53,17 @@
     @apply px-[18px] xs:px-[26px] sm:px-[32px] md:px-[42px] lg:px-[72px] xl:px-[140px];
   }
 }
+
+.switch-root {
+  @apply w-[107px] py-2 px-3 bg-white rounded-full relative;
+  @apply focus:outline-none focus:ring-1 focus:ring-offset-2 focus:ring-offset-white focus:ring-green;
+}
+
+.switch-thumb {
+  @apply block w-[30px] h-[30px] rounded-full;
+  @apply bg-green;
+  @apply transition-transform will-change-transform;
+}
+.switch-thumb[data-state='checked'] {
+  @apply translate-x-12;
+}
