@@ -2,7 +2,7 @@ import { payments } from '~/lib/data';
 
 export const Payments = () => {
   return (
-    <section>
+    <section className="bg-white">
       <h1 className="font-bold text-dark-200 text-3xl md:text-5xl xl:text-7xl">
         All crypto and fiat payment accepted
       </h1>

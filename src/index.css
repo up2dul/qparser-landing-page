@@ -50,6 +50,6 @@
   section {
     @apply text-center leading-none;
     @apply py-8 sm:py-12 md:py-20 xl:py-25;
-    @apply px-[30px] xs:px-[36px] sm:px-[42px] md:px-[56px] lg:px-[72px] xl:px-[140px];
+    @apply px-[18px] xs:px-[26px] sm:px-[32px] md:px-[42px] lg:px-[72px] xl:px-[140px];
   }
 }

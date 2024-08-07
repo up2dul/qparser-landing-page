@@ -1,4 +1,4 @@
-import { Button } from '../ui';
+import { Button } from '~/components/ui';
 
 export const JoinUs = () => {
   return (
