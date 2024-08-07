@@ -1,3 +1,6 @@
+import { Tab } from '~/components/ui';
+import { cn } from '~/lib/utils';
+
 export const Install = () => {
   return (
     <section className="bg-green text-dark-400">
@@ -5,7 +8,24 @@ export const Install = () => {
         Lazy to install on desktop
       </h1>
 
-      <p className="mt-5 font-medium text-sm md:text-lg xl:text-xl">
+      <div
+        className={cn(
+          'p-[18px] md:py-10 xl:py-[55px] mx-auto my-20 bg-white',
+          'w-full md:w-[65%] xl:w-[40%]',
+          'flex justify-center items-center rounded-2xl',
+        )}
+      >
+        <Tab>
+          <img
+            src="/images/logo.webp"
+            alt="QParser logo"
+            className="w-10 inline mr-5"
+          />
+          QParser - Effortless
+        </Tab>
+      </div>
+
+      <p className="mt-5 font-medium text-sm text-balance md:text-lg xl:text-xl">
         You can open QParser in many browsers such as Firefox, Brave, Chrome,
         etc.
       </p>
