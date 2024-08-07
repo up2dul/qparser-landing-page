@@ -1,3 +1,4 @@
+name: 🔬 Preview and Audit using Lighthouse
 on:
   push:
     branches:
@@ -11,7 +12,6 @@ on:
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
-    name: Lighthouse CI
     permissions:
       contents: read
       deployments: write

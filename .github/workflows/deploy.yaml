@@ -1,3 +1,4 @@
+name: 🌎 Build and Deploy to Cloudflare Pages
 on:
   push:
     branches:
@@ -11,7 +12,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Build and Deploy to Cloudflare Pages
     permissions:
       contents: read
       deployments: write
