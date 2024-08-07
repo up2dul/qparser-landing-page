@@ -82,7 +82,7 @@ export const pricings = [
     isHighlighted: true,
   },
   {
-    title: '3 Month',
+    title: '3 Months',
     description: 'Recommended for experts',
     price: '$22.50',
     period: 'Month',
