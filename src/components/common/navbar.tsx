@@ -29,17 +29,15 @@ export const Navbar = () => {
       <aside
         className={cn(
           'flex lg:hidden flex-col items-center justify-center',
-          ' backdrop-blur-md h-screen absolute inset-0 z-20',
-          'transition-all duration-300',
-          isOpen
-            ? 'bg-dark-500/70 translate-x-0'
-            : 'bg-transparent translate-x-full',
+          'bg-dark-500 h-screen absolute inset-0 z-20',
+          'transition-transform duration-300',
+          isOpen ? 'translate-x-0' : 'translate-x-full',
         )}
       >
         <button
           type="button"
           aria-label="Close menu"
-          className="absolute top-4 right-4 z-10"
+          className="absolute top-8 right-6 z-10"
           onClick={() => setIsOpen(false)}
         >
           <X size={46} />
