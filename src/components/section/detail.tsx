@@ -1,6 +1,6 @@
 export const Detail = () => {
   return (
-    <section className="font-medium text-left text-dark-300 text-[64px]">
+    <section className="font-medium text-left text-dark-300 text-4xl md:text-5xl xl:text-[64px]">
       <p>
         QParser offers an effortless and smooth way to scrape Google search
         results by keyword or dork.
