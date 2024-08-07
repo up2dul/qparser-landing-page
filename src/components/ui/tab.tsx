@@ -1,14 +1,21 @@
+import type { ClassValue } from 'clsx';
 import { X } from 'lucide-react';
 
 import { cn } from '~/lib/utils';
 
-export const Tab = ({ children }: { children: React.ReactNode }) => {
+type TabProps = {
+  className?: ClassValue;
+  children: React.ReactNode;
+};
+
+export const Tab = ({ className, children }: TabProps) => {
   return (
     <article
       className={cn(
-        'relative h-[78px] px-4 bg-dark-400',
+        'relative w-[340px] h-[78px] px-4 bg-dark-400',
         'flex items-center justify-center overflow-x-hidden',
         'font-medium text-left text-white',
+        className,
       )}
     >
       <div>{children}</div>
@@ -19,7 +26,7 @@ export const Tab = ({ children }: { children: React.ReactNode }) => {
           'bg-gradient-to-r from-dark-400/80 to-dark-400',
         )}
       >
-        <X className="w-3" />
+        <X size={12} />
       </div>
     </article>
   );

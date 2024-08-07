@@ -1,4 +1,4 @@
-import { Button } from '~/components/ui';
+import { Button, Tab } from '~/components/ui';
 
 export const Hero = () => {
   return (
@@ -14,6 +14,13 @@ export const Hero = () => {
       <Button variant="green" className="mt-12">
         Get started
       </Button>
+
+      <div className="mt-16 relative flex flex-col items-center lg:flex-row">
+        <Tab className="-rotate-[4deg]">Fully proxyless google parsing</Tab>
+        <Tab className="-rotate-[7deg]">Unlock unlimited search query</Tab>
+        <Tab className="rotate-[4deg]">Fast and Efficient</Tab>
+        <Tab className="-rotate-[7deg]">Access full costumers support</Tab>
+      </div>
     </section>
   );
 };
