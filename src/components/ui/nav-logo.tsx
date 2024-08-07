@@ -9,7 +9,7 @@ export const NavLogo = ({ isResponsive }: { isResponsive?: boolean }) => {
         className="w-10 h-10 border-dark-500 border rounded-full"
       />
 
-      <h1 className={cn('font-bold text-6', isResponsive && 'hidden md:block')}>
+      <h1 className={cn('font-bold text-6', isResponsive && 'hidden lg:block')}>
         QParser
       </h1>
     </div>

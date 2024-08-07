@@ -6,16 +6,19 @@ export const Header = () => {
   return (
     <header
       className={cn(
-        'py-5 px-[70px] bg-dark-500 text-white',
+        'bg-dark-500/80 backdrop-blur-md text-white',
+        'pt-5 pb-3 px-[18px] md:px-6 lg:px-8 xl:px-[70px]',
         'flex justify-between items-center',
         'fixed top-0 inset-x-0 z-10',
       )}
     >
-      <NavLogo isResponsive />
+      <Link href="/">
+        <NavLogo isResponsive />
+      </Link>
 
       <Navbar />
 
-      <div className="flex items-center gap-x-10">
+      <div className="items-center gap-4 xl:gap-10 hidden lg:flex">
         <Link href="#">Purchase</Link>
         <Button variant="light">Login</Button>
       </div>
