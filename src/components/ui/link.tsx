@@ -1,19 +1,47 @@
+import type { ClassValue } from 'clsx';
+import { Link as ReactRouterLink } from 'react-router-dom';
+
+import { cn } from '~/lib/utils';
+
 type LinkProps = {
   href: string;
-  children: React.ReactNode;
   isNewTab?: boolean;
+  className?: ClassValue;
+  children: React.ReactNode;
 };
 
-export const Link = ({ href, children, isNewTab = false }: LinkProps) => {
+export const Link = ({
+  href,
+  isNewTab = false,
+  className,
+  children,
+}: LinkProps) => {
+  const ariaLabel = `${children?.toString()} link`;
+  const mergedClassName = cn(
+    'font-medium text-center transition hover:opacity-80',
+    className,
+  );
+
+  if (isNewTab)
+    return (
+      <a
+        href={href}
+        aria-label={ariaLabel}
+        target={isNewTab ? '_blank' : '_self'}
+        rel="noreferrer"
+        className={mergedClassName}
+      >
+        {children}
+      </a>
+    );
+
   return (
-    <a
-      href={href}
-      aria-label={`${children?.toString()} link`}
-      target={isNewTab ? '_blank' : '_self'}
-      rel="noreferrer"
-      className="font-medium transition hover:opacity-80"
+    <ReactRouterLink
+      to={href}
+      aria-label={ariaLabel}
+      className={mergedClassName}
     >
       {children}
-    </a>
+    </ReactRouterLink>
   );
 };
