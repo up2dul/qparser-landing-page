@@ -18,7 +18,7 @@ export const Button = ({
 }: ButtonProps) => {
   const mergedClassName = cn(
     'rounded-full py-[14px] px-[38px] font-medium',
-    href && 'block',
+    href && 'inline-block',
     variant === 'dark' && 'bg-dark-400 text-white',
     variant === 'light' && 'bg-white text-dark-400',
     variant === 'green' && 'bg-green text-dark-400',

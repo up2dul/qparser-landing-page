@@ -1,34 +1,29 @@
 import type { ClassValue } from 'clsx';
-import { Link as ReactRouterLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import { cn } from '~/lib/utils';
 
 type LinkProps = {
   href: string;
-  isNewTab?: boolean;
   className?: ClassValue;
   children: React.ReactNode;
 };
 
-export const Link = ({
-  href,
-  isNewTab = false,
-  className,
-  children,
-}: LinkProps) => {
+export const Link = ({ href, className, children }: LinkProps) => {
   const ariaLabel = `${children?.toString()} link`;
   const mergedClassName = cn(
     'font-medium text-center transition hover:opacity-80',
     className,
   );
+  const isExternal = href.startsWith('http');
 
   // for external links
-  if (isNewTab)
+  if (isExternal)
     return (
       <a
         href={href}
         aria-label={ariaLabel}
-        target={isNewTab ? '_blank' : '_self'}
+        target={isExternal ? '_blank' : '_self'}
         rel="noreferrer"
         className={mergedClassName}
       >
@@ -36,22 +31,10 @@ export const Link = ({
       </a>
     );
 
-  // for hash links
-  if (!isNewTab && href.startsWith('#'))
-    return (
-      <a href={href} aria-label={ariaLabel} className={mergedClassName}>
-        {children}
-      </a>
-    );
-
   // for internal links
   return (
-    <ReactRouterLink
-      to={href}
-      aria-label={ariaLabel}
-      className={mergedClassName}
-    >
+    <HashLink to={href} aria-label={ariaLabel} className={mergedClassName}>
       {children}
-    </ReactRouterLink>
+    </HashLink>
   );
 };
