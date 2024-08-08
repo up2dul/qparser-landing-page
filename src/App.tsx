@@ -1,7 +1,7 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
 
 import { Footer, Header } from './components/layout';
-import { Home } from './pages';
+import { Home, NotFound } from './pages';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         }
       >
         <Route index element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
