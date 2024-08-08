@@ -1,15 +1,15 @@
 export const navs = [
   {
     title: 'About',
-    href: '/about',
+    href: '#detail',
   },
   {
     title: 'How it work',
-    href: '/how-it-work',
+    href: '#detail',
   },
   {
     title: 'Pricing',
-    href: '/pricing',
+    href: '#pricing',
   },
   {
     title: 'Solution',
@@ -17,7 +17,7 @@ export const navs = [
   },
   {
     title: 'Features',
-    href: '/features',
+    href: '#pricing',
   },
 ];
 
