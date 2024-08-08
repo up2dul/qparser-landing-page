@@ -1,29 +1,26 @@
+import { Outlet, Route, Routes } from 'react-router-dom';
+
 import { Footer, Header } from './components/layout';
-import {
-  Detail,
-  Hero,
-  Install,
-  JoinUs,
-  Payments,
-  Pricing,
-} from './components/section';
+import { Home } from './pages';
 
 function App() {
   return (
-    <>
-      <Header />
-
-      <main className="pt-20 bg-dark-500">
-        <Hero />
-        <Install />
-        <Detail />
-        <Payments />
-        <Pricing />
-        <JoinUs />
-      </main>
-
-      <Footer />
-    </>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Header />
+            <main className="pt-20 bg-dark-500">
+              <Outlet />
+            </main>
+            <Footer />
+          </>
+        }
+      >
+        <Route index element={<Home />} />
+      </Route>
+    </Routes>
   );
 }
 

@@ -1,5 +1,5 @@
 import { AlignJustify, X } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Button, Link } from '~/components/ui';
 import { navs } from '~/lib/data';
@@ -7,6 +7,14 @@ import { cn } from '~/lib/utils';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('hashchange', () => setIsOpen(false));
+
+    return () => {
+      window.removeEventListener('hashchange', () => setIsOpen(false));
+    };
+  }, []);
 
   return (
     <nav>
@@ -53,7 +61,7 @@ export const Navbar = () => {
             <Link href="#">Purchase</Link>
           </li>
           <li className="w-full">
-            <Button variant="light" className="w-full">
+            <Button href="login" variant="light" className="w-full">
               Login
             </Button>
           </li>
