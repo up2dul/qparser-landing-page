@@ -3,6 +3,7 @@ import { cn } from '~/lib/utils';
 export const Detail = () => {
   return (
     <section
+      id="detail"
       className={cn(
         'px-[30px] md:px-[42px] lg:px-[72px] xl:px-[140px]',
         'text-4xl md:text-5xl xl:text-[64px]',

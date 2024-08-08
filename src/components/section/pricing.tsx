@@ -5,7 +5,7 @@ import { pricings } from '~/lib/data';
 
 export const Pricing = () => {
   return (
-    <section className="bg-dark-500">
+    <section id="pricing" className="bg-dark-500">
       <h1 className="font-bold text-grey text-3xl md:text-5xl xl:text-6xl">
         Get Your Best Deal
       </h1>
