@@ -23,7 +23,7 @@ export const PricingCard = ({
   return (
     <article
       className={cn(
-        'py-[30px] px-4 w-[340px] min-h-[535px] text-left rounded-[20px]',
+        'py-[30px] px-4 w-[340px] min-h-[535px] text-dark-400 text-left rounded-[20px]',
         'flex flex-col items-stretch justify-between',
         isHighlighted ? 'bg-green' : 'bg-white',
       )}

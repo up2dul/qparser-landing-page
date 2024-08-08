@@ -1,9 +1,9 @@
-import { Button, Tab } from '~/components/ui';
+import { Button, Mark, MarkArrow, Tab } from '~/components/ui';
 
 export const Hero = () => {
   return (
-    <section className="bg-dark-500">
-      <h1 className="font-bold text-white leading-tight text-4xl md:text-5xl xl:text-7xl">
+    <section className="bg-dark-500 text-white">
+      <h1 className="font-bold leading-tight text-4xl md:text-5xl xl:text-7xl">
         Effortless and <br /> Budget-Friendly <br /> Google Parsing
       </h1>
 
@@ -21,6 +21,13 @@ export const Hero = () => {
         <Tab className="rotate-[4deg]">Fast and Efficient</Tab>
         <Tab className="-rotate-[7deg]">Access full costumers support</Tab>
       </div>
+
+      <Mark
+        text="Start easy and fast just this button"
+        className="hidden absolute w-[124px] rotate-[14deg] bottom-48 lg:block lg:right-[28vw] xl:right-[34vw]"
+      >
+        <MarkArrow />
+      </Mark>
     </section>
   );
 };
