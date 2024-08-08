@@ -22,6 +22,7 @@ export const Link = ({
     className,
   );
 
+  // for external links
   if (isNewTab)
     return (
       <a
@@ -35,6 +36,15 @@ export const Link = ({
       </a>
     );
 
+  // for hash links
+  if (!isNewTab && href.startsWith('#'))
+    return (
+      <a href={href} aria-label={ariaLabel} className={mergedClassName}>
+        {children}
+      </a>
+    );
+
+  // for internal links
   return (
     <ReactRouterLink
       to={href}
