@@ -13,7 +13,7 @@ export const Pricing = () => {
       <div className="mt-[43px] md:mt-[50px] flex justify-center items-center gap-8 text-white">
         <h2 className="font-medium">Monthly</h2>
 
-        <Switch.Root className="switch-root">
+        <Switch.Root aria-label="Pricing switch button" className="switch-root">
           <Switch.Thumb className="switch-thumb" />
         </Switch.Root>
 

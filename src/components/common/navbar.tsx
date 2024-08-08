@@ -27,6 +27,7 @@ export const Navbar = () => {
 
       <button
         type="button"
+        aria-label="Open menu button"
         className="block lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -43,7 +44,7 @@ export const Navbar = () => {
       >
         <button
           type="button"
-          aria-label="Close menu"
+          aria-label="Close menu button"
           className="absolute top-8 right-6 z-10"
           onClick={() => setIsOpen(false)}
         >
