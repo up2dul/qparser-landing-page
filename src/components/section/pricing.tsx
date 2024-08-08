@@ -3,6 +3,7 @@ import * as Switch from '@radix-ui/react-switch';
 import { PricingCard } from '~/components/common';
 import { Mark, MarkArrow } from '~/components/ui';
 import { pricings } from '~/lib/data';
+import { cn } from '~/lib/utils';
 
 export const Pricing = () => {
   return (
@@ -31,7 +32,12 @@ export const Pricing = () => {
 
       <Mark
         text="Save 10% per month"
-        className="absolute -rotate-[18deg] top-36 sm:top-44 md:top-56 xl:top-64 right-[20vw] sm:right-[32vw] xl:right-[38vw] flex flex-col-reverse gap-4"
+        className={cn(
+          'flex flex-col-reverse gap-4',
+          'absolute -rotate-[18deg]',
+          'top-36 sm:top-44 md:top-56 xl:top-64',
+          'right-[20vw] sm:right-[32vw] xl:right-[38vw]',
+        )}
       >
         <MarkArrow className="rotate-[55deg]" />
       </Mark>
