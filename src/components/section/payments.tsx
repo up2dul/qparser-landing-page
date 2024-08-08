@@ -16,7 +16,9 @@ export const Payments = () => {
             <img
               src={payment.src}
               alt={payment.name}
-              className="w-28 mx-auto"
+              width={113}
+              height={113}
+              className="mx-auto"
             />
           </li>
         ))}

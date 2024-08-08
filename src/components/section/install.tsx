@@ -19,7 +19,9 @@ export const Install = () => {
           <img
             src="/images/logo.webp"
             alt="QParser logo"
-            className="w-10 inline mr-5"
+            width={40}
+            height={40}
+            className="inline mr-5"
           />
           QParser - Effortless
         </Tab>

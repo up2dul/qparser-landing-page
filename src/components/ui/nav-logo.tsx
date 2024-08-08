@@ -6,7 +6,9 @@ export const NavLogo = ({ isResponsive }: { isResponsive?: boolean }) => {
       <img
         src="/images/logo.webp"
         alt="QParser logo"
-        className="w-10 h-10 border-dark-500 border rounded-full"
+        width={40}
+        height={40}
+        className="border-dark-500 border rounded-full"
       />
 
       <h1 className={cn('font-bold text-6', isResponsive && 'hidden lg:block')}>
