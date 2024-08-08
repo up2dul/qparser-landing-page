@@ -11,7 +11,7 @@ export const Hero = () => {
         Let’s make your dreams come true
       </p>
 
-      <Button variant="green" className="mt-12">
+      <Button href="#pricing" variant="green" className="mt-12">
         Get started
       </Button>
 

@@ -1,20 +1,19 @@
 import { AlignJustify, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import { Button, Link } from '~/components/ui';
 import { navs } from '~/lib/data';
 import { cn } from '~/lib/utils';
 
 export const Navbar = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
-    window.addEventListener('hashchange', () => setIsOpen(false));
-
-    return () => {
-      window.removeEventListener('hashchange', () => setIsOpen(false));
-    };
-  }, []);
+    setIsOpen(false);
+  }, [location]);
 
   return (
     <nav>
@@ -58,10 +57,10 @@ export const Navbar = () => {
             </li>
           ))}
           <li className="mt-2">
-            <Link href="#">Purchase</Link>
+            <Link href="/purchase">Purchase</Link>
           </li>
           <li className="w-full">
-            <Button href="login" variant="light" className="w-full">
+            <Button href="/login" variant="light" className="w-full">
               Login
             </Button>
           </li>

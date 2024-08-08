@@ -48,7 +48,9 @@ export const PricingCard = ({
         </ul>
       </div>
 
-      <Button variant={isHighlighted ? 'dark' : 'green'}>Register now</Button>
+      <Button href="/register" variant={isHighlighted ? 'dark' : 'green'}>
+        Register now
+      </Button>
     </article>
   );
 };

@@ -19,8 +19,10 @@ export const Header = () => {
       <Navbar />
 
       <div className="items-center gap-4 xl:gap-10 hidden lg:flex">
-        <Link href="#">Purchase</Link>
-        <Button variant="light">Login</Button>
+        <Link href="/purchase">Purchase</Link>
+        <Button href="/login" variant="light">
+          Login
+        </Button>
       </div>
     </header>
   );
