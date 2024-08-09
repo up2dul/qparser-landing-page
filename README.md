@@ -48,20 +48,23 @@ pnpm build
 ```
 components/
 ├── common/
-│   ├── card.tsx
-│   └── navbar.tsx
+│   ├── navbar.tsx
+│   └── pricing-card.tsx
 ├── layout/
-│   ├── header.tsx
-│   └── footer.tsx
-├── ui/
-│   ├── button.tsx
-│   ├── link.tsx
-│   └── toggle-button.tsx
-└── section/
-    ├── detail.tsx
-    ├── hero.tsx
-    ├── install.tsx
-    ├── join-us.tsx
-    ├── payment.tsx
-    └── pricing.tsx
+│   ├── footer.tsx
+│   └── header.tsx
+├── section/
+|   ├── detail.tsx
+│   ├── hero.tsx
+│   ├── install.tsx
+│   ├── join-us.tsx
+│   ├── payment.tsx
+│   └── pricing.tsx
+└── ui/
+    ├── button.tsx
+    ├── link.tsx
+    ├── mark-arrow.tsx
+    ├── mark.tsx
+    ├── nav-logo.tsx
+    └── tab.tsx
 ```
