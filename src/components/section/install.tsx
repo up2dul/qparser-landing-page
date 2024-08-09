@@ -33,7 +33,7 @@ export const Install = () => {
       </p>
 
       <Mark
-        text="Solution for discover a trend"
+        text="Solution for you"
         className={cn(
           'absolute flex flex-col-reverse -rotate-45 lg:rotate-12',
           'left-[14vw] sm:left-[20] md:left-[24vw] lg:left-[22vw]',
