@@ -2,6 +2,9 @@
   <i><h1>QParser Landing Page</h1></i>
 </div>
 
+![image](https://github.com/user-attachments/assets/1a13ca36-75ba-43ac-907d-04df38437a23)
+
+
 # About
 Built with React along with:
 - ⚡ [Vite](https://vitejs.dev)
